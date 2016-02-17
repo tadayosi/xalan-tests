@@ -32,7 +32,6 @@ public class XalanJ_2591_Test {
         Source xsl = new StreamSource(getClass().getResourceAsStream("/XalanJ_2591_Test.xsl"));
         TransformerFactory factory = TransformerFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
-        //System.out.println(factory.getClass());
         Templates templates = factory.newTemplates(xsl);
 
         Transformer transformer = templates.newTransformer();
